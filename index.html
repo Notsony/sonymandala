@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css"> 
+  <title>Now Loading...</title> 
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+  <div id="loader"></div>
+  <h1>Please Wait...</h1>
+
+<script>
+  let myLet;
+
+  function myFunction() {
+    myLet = setTimeout(showPage, 6000);
+  }
+
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    window.location.replace("home/");
+  }
+</script>
+
+</body>
+</html>
